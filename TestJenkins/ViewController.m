@@ -27,7 +27,7 @@
 
 - (void)setupUI {
   UILabel *label = [UILabel new];
-  label.frame = CGRectMake(self.view.bounds.size.width - 80, 200, 80, 40);
+  label.frame = CGRectMake((self.view.bounds.size.width - 80) / 2, 200, 80, 40);
   label.text = @"Jenkins CI";
   label.textColor = [UIColor orangeColor];
   [self.view addSubview:label];
