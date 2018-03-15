@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   self.view.backgroundColor = [UIColor grayColor];
+  [self setupUI];
 }
 
 
@@ -24,5 +25,12 @@
   [super didReceiveMemoryWarning];
 }
 
+- (void)setupUI {
+  UILabel *label = [UILabel new];
+  label.frame = CGRectMake(self.view.bounds.size.width - 80, 200, 80, 40);
+  label.text = @"Jenkins CI";
+  label.textColor = [UIColor orangeColor];
+  [self.view addSubview:label];
+}
 
 @end
