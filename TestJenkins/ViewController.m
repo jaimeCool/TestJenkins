@@ -28,7 +28,7 @@
 - (void)setupUI {
   UILabel *label = [UILabel new];
   label.frame = CGRectMake((self.view.bounds.size.width - 80) / 2, 200, 80, 40);
-  label.text = @"Jenkins CI merge before build again";
+  label.text = @"Jenkins CI merge before build Success";
   label.textColor = [UIColor orangeColor];
   [self.view addSubview:label];
 }
